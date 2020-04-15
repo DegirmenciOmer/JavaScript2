@@ -14,6 +14,7 @@
 
 function hijackGoogleLogo() {
   // your code goes in here
+  const logo1 = document.querySelector("#hplogo");
+logo1.setAttribute("src", "https://avatars2.githubusercontent.com/u/20858568?s=280&v=4");
 }
-
 hijackGoogleLogo();

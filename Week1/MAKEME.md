@@ -127,7 +127,9 @@ The end result should look and behave similar to [https://dancingcat-sandbox.mxa
 
 ## **3. Code along**
 
-In the following tutorial you'll learn how to make a small web application that allows a user to add new issues to a board. Included is practice with [Bootstrap](https://getbootstrap.com/).
+In the following tutorial you'll learn how to make a small web application that allows 
+a user to add new issues to a board. Included is practice with 
+[Bootstrap](https://getbootstrap.com/).
 
 Enjoy!
 
@@ -135,11 +137,15 @@ Enjoy!
 
 ## **4. PROJECT: Random Quote Generator**
 
-> Every week ends with a project you have to build on your own. Instead of getting clear-cut instructions, you'll get a list of criteria that your project needs to measure up to.
+> Every week ends with a project you have to build on your own. 
+Instead of getting clear-cut instructions, you'll get a list of criteria 
+that your project needs to measure up to.
 
 > Write the project code in the folder `Week1 \ project`.
 
-In this week's project you'll be making a Random Quote Generator! It includes a text box and a simple button that, when clicked, take a random quote out of a set amount of quotes and show it in the page. Here's how it should look:
+In this week's project you'll be making a Random Quote Generator! 
+It includes a text box and a simple button that, when clicked, take a random 
+quote out of a set amount of quotes and show it in the page. Here's how it should look:
 
 ![Random Quote Generator](../assets/randomquotegenerator.png)
 
