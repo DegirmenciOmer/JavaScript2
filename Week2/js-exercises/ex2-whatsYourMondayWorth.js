@@ -7,14 +7,13 @@
  Avoid using for loop or forEach.
  Multiply each duration by a per - hour rate for billing and sum it all up.
  Output a formatted Euro amount, rounded to Euro cents, e.g: €11.34.
- Make sure the function can be used on any array of objects that contain a duration property with a number value
+ Make sure the function can be used on any array of objects that contain a 
+ duration property with a number value
 
  */
 
 
-function dayWorth(tasks, hourlyRate) {
-  // put your code in here, the function does returns a euro formatted string
-}
+
 
 const mondayTasks = [{
     name: 'Daily standup',
@@ -34,5 +33,30 @@ const mondayTasks = [{
   },
 ];
 
+function dayWorth(tasks, hourlyRate) {
+  
+// put your code in here, the function does returns a euro formatted string
+let sumDurations = 0;
+
+const durations = tasks.map(hourly => {
+  return sumDurations += hourly.duration;
+});
+output = sumDurations / 60 * hourlyRate;
+//return a € formatted string
+return '€' + output.toFixed(2);
+};
+
 console.log(dayWorth(mondayTasks, 25))
 console.log(dayWorth(mondayTasks, 13.37))
+
+
+
+// Write a JavaScript function to merge two arrays and remove all duplicated elements.
+
+// Test data:
+// const array1 = [1, 2, 3];
+// const array2 = [2, 30, 1];
+// console.log(merge_array(array1, array2));
+// [3, 2, 30, 1]
+
+

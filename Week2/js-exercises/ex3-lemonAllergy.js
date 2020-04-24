@@ -2,8 +2,10 @@
  
  ** Exercise 3: Lemon allergy **
  
-  Your mom bought you a basket of fruit, because you 're doing so well in HackYourFuture. How sweet of her!
-  However, she forgot that you are allergic to lemons!Let 's quickly dispose of them before you get an attack.
+  Your mom bought you a basket of fruit, because you 're doing so well in HackYourFuture. 
+  How sweet of her!
+  However, she forgot that you are allergic to lemons!Let 's quickly dispose of them 
+  before you get an attack.
 
   Write a function that uses the filter array function to take out the lemons.
   Avoid using for loop or forEach.
@@ -12,10 +14,21 @@
  */
 
 
-function takeOutLemons(basket) {
-  // your code goes in here. The output is a string 
+// function takeOutLemons(basket) {
+//   // your code goes in here. The output is a string 
+
+// }
+const takeOutLemons = basket => {
+	allergyFree = fruitBasket.filter(basket => {
+		return basket !== 'Lemon';
+	})
+	return allergyFree.map(basket => {
+		return basket;
+	});
 }
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
 console.log(takeOutLemons(fruitBasket));
+
+//DONE
