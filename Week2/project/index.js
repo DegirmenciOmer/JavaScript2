@@ -11,10 +11,16 @@
  * 
  */
 
-let s = 5;//document.querySelector('.form-example');
-let m = 1; //document.querySelector('#min');
+let s = 0;
+let m; 
 let timer;
-const stopWatch = document.querySelector('.stopwatch');
+const pomodoro = document.querySelector('.pomodoro');
+function minuteInput() {
+  const minInput = document.querySelector("#setMin");
+  m = parseInt(minInput.minutes.value);
+  document.getElementById("demo").innerHTML = "Your pomodoro is set up to " + m + " minutes";
+
+}
 
 function start() {
   if (!timer){
@@ -22,17 +28,23 @@ function start() {
   }
 }
 
-function run() {
-  m = Math.floor(s / 60);
-  stopWatch.textContent = m + ':' + s;
+function run() {  
+  pomodoro.textContent = m + ':' + s;
   s--;
-  if(s < 0 && m < 0) {
-    clearInterval(timer);
-    stopWatch.textContent = "Time\'s up!"
+  if(s < 0) {
+    if(m == 0) {
+      clearInterval(timer);
+      pomodoro.textContent = "Time\'s up!"
+    }
+    m--;
+    s = 59;    
   }
-
-} 
-
+  //  If the timer is running, the user can 't change the session length anymore
+  if(timer){
+    minuteInput = false;
+  }
+}
+//pause the timer
 function pause() {
   clearInterval(timer);
   timer = false;

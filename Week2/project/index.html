@@ -7,24 +7,26 @@
   <title>Pomodoro Clock</title>
 </head>
 
-<body>
+<body style="font-size: xx-large;">
+  <p>Please enter minutes to start your pomodoro clock</p>
+  <br>
+  
+    <form action="" method="get" id="setMin">
+        <input type="number" name="minutes" value="" placeholder="Enter minutes" required>      
+    </form>
+  
+  <br>
+  <button onclick="minuteInput()">Set Pomodoro Clock</button>
+  <br>
+  <p id="demo"></p>
+  <br>
   <div id="controls">
     <button onclick="start()">START</button>
     <button onclick="pause()">PAUSE</button>
-    
-
   </div>
-  <div class="stopwatch">
-    <form action="" method="get" class="form-example">
-      <div class="form-example">
-        <input type="number" name="name" id="min" required>
-        <input type="number" name="name" id="sec" required>
-        <input type="submit" value="Submit">
-      
-        
-      </div>
-    </form>
-    00:00:00 </div>
+
+  <div class="pomodoro"></div>
+
   <script src="index.js"></script>
 </body>
 
