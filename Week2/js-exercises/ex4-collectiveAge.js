@@ -10,12 +10,20 @@
  */
 
 function collectiveAge(people) {
+  const arrayOfAges = people.map(person => {
+    return person.age;
+  } );
+
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return arrayOfAges.reduce(reducer);
+
   // return the sum of age for all the people
-  let collectiveMembers = 0;
-  for (let i = 0; i < hackYourFutureMembers.length; i++) {
-    collectiveMembers+=hackYourFutureMembers[i].age;
-  }
-  return collectiveMembers;
+  //let collectiveMembers = 0;
+
+  // for (let i = 0; i < hackYourFutureMembers.length; i++) {
+  //   collectiveMembers+=hackYourFutureMembers[i].age;
+  // }
+  // return collectiveMembers;
 }
 
 const hackYourFutureMembers = [{

@@ -29,6 +29,6 @@ const takeOutLemons = basket => {
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
-console.log(takeOutLemons(fruitBasket));
+console.log("My mom bought me a fruit basket, containing " + takeOutLemons(fruitBasket) + "!");
 
 //DONE

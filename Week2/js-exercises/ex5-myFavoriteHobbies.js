@@ -8,12 +8,15 @@
  Put the list items in an unordered list
  */
 
-function createHTMLList() {
+	// 
+
+
+function createHTMLList(arr) {
 	// your code goes in here
 	const body =document.querySelector('body');
 	const ul = document.createElement('ul');
 	body.appendChild(ul);
-	myHobbies.map(hobby => {
+	arr.forEach(hobby => {
 		let li = document.createElement('li');
 		li.innerHTML = hobby;
 		ul.appendChild(li);
@@ -28,7 +31,9 @@ const myHobbies = [
   'Going to the gym',
 ];
 
-createHTMLList();
+createHTMLList(myHobbies);
+
+	
 
 
 //DONE
