@@ -13,9 +13,11 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
    - A callback that executes if the number is divisible by 3
    - A callback that executes if the number is divisible by 5
 
- The  function should first generate an array containing values from start value to end value(inclusive).
+ The  function should first generate an array containing values from 
+ start value to end value(inclusive).
 
- Then the  function should take the newly created array and iterate over it, and calling the first callback
+ Then the  function should take the newly created array 
+ and iterate over it, and calling the first callback
  if the array value is divisible by 3.
 
  The function should call the second callback
@@ -26,11 +28,33 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 
 */
 
+function sayThree() {
+	return 'Say three!'
+  }
+
+  function sayFive() {
+	return 'Say five!'
+  }
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const numbers = [];
-  // make array
-  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
-}
+	const numbers = [];
+	// make array
+	for (let i = startIndex; i <= stopIndex; i++) {
+	 numbers.push(i);
+  }
+
+  for (let i = 0; i <= numbers.length; i++) {
+	if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
+		console.log(threeCallback() +' and ' + fiveCallback());
+	}else if (numbers[i] % 3 === 0) {
+		console.log(threeCallback());
+	}else if (numbers[i] % 5 === 0) {
+		console.log(fiveCallback());
+	}
+ }
+  console.log(numbers)	
+	// start at beginning of array and check if you should call threeCallback or fiveCallback 
+	//or go on to next
+  }
 
 threeFive(10, 15, sayThree, sayFive);
 

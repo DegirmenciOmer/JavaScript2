@@ -12,10 +12,16 @@ does not return anything but removes any duplicate elements from the array.
 
 
 // WRITE YOUR FUNCTION HERE
+function removeDuplicates(arr) {
+	return [...new Set(arr)]; //resource: https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array
+	
+} 
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-removeDuplicates(letter);
+console.log(removeDuplicates(letters));
 
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-  console.log("Hooray!")
+// if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
+//   console.log("Hooray!")
+
+//DONE

@@ -19,3 +19,6 @@ const x = (function () {
 })();
 
 x();
+
+/*when this code is run, it will pop up an alert number 12. Because x is a function 
+which reassigns the value of a to 12. and it returns this variable in a closure as an alert.
