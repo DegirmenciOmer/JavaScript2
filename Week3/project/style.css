@@ -12,21 +12,80 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+}
+
+h2 {
+    margin: 22px 0 12px;
+    font-size: 19px;
+}
+
 .app {
     border: 2px solid;
     border-radius: 8px;
     box-shadow: 2px 2px #4d0026;
-    max-width: 400px;
+    max-width: 360px;
     width: 100%;
     max-height: 900px;
-    height: 900px;
+    height: 550px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    
-    
-    
+    margin-top: 27px;     
 }
 
 .calc {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.bill {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.inputs {
+    width: 222px;
+    height: 44px;
+    font-size: 20px; 
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.euro {
+    transform: translate(-24px, -244px);
+    width: 222px;
+    height: 44px;
+    font-size: 20px; 
+    padding: 8px 0 0 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    z-index: -1
+    
+}
+
+button {
+    width: 55%;
+    height: 42px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 52px;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    transform: translateY(-64px);
+}
+
+
+.output {
+    margin-top: -25px;
+    font: 35px bold;
+    align-content:center;    
 }
